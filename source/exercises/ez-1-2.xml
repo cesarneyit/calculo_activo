@@ -597,797 +597,195 @@
       <p permid="NBt">
         <ol marker="a." permid="uzA">
           <li permid="NWS">
-<?xml version="1.0" encoding="UTF-8" ?>
-<!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
-<!-- Matthew Boelkins                                                      -->
-<!--                                                                       -->
-<!-- Este archivo es parte de Active Calculus.                             -->
-<!--                                                                       -->
-<!-- Se concede permiso para copiar, distribuir y/o modificar este documento -->
-<!-- bajo los términos de la licencia Creative Commons BY-SA.               -->
-<!-- El trabajo se puede utilizar de forma gratuita por cualquier parte, siempre y cuando se atribuya a -->
-<!-- los autores, el trabajo y sus derivados se utilicen en el espíritu de -->
-<!-- "compartir y compartir igual". Todas las marcas comerciales son marcas registradas de -->
-<!-- sus respectivos propietarios.                                         -->
-<!-- **********************************************************************-->
-<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-1-2" permid="GGO">
 
-  <exercise xml:id="ez-1-2-WW1" permid="PxK">
-    <title>Límites en un gráfico por partes</title>
-    <webwork source="Library/Michigan/Chap1Sec8/Q01.pg" />
-  </exercise>
-  <!-- El código del problema está estructurado para crear una tabla dentro de otra tabla; no es compatible -->
-  <!--
-  <exercise xml:id="ez-1-2-WW2">
-    <webwork source="Library/ASU-topics/setLimitConcepts/ur_lr_1-5_1.pg" />
-  </exercise>
-  -->
-  <exercise xml:id="ez-1-2-WW3" permid="vET">
-    <title>Estimación numérica de un límite</title>
-    <webwork source="Library/Michigan/Chap1Sec8/Q03.pg" />
-  </exercise>
-
-  <exercise xml:id="ez-1-2-WW4" permid="bMc">
-    <title>Límites de una fórmula por partes</title>
-    <webwork source="Library/Michigan/Chap1Sec8/Q21.pg" />
-  </exercise>
-
-  <exercise xml:id="ez-1-2-WW5" permid="HTl">
-    <title>Evaluación algebraica de un límite</title>
-    <webwork source="Library/ASU-topics/setLimitConcepts/3-2-34.pg" />
-  </exercise>
-
-  <exercise xml:id="ez-1-2-Rational" permid="oau">
-    <statement>
-      <p permid="ZPL">
-        Considera la función cuya fórmula es <m>f(x) = \frac{16-x^4}{x^2-4}</m>.
-      </p>
-
-      <p permid="FWU">
-        <ol marker="a." permid="GNS">
-          <li permid="IDf">¿Cuál es el dominio de <m>f</m>?</li>
-
-          <li permid="oKo">
-            Utiliza una secuencia de valores de <m>x</m> cerca de <m>a = 2</m> para estimar el valor de <m>\lim_{x \to 2} f(x)</m>,
-            si crees que el límite existe.
-            Si crees que el límite no existe, explica por qué.
-          </li>
-
-          <li permid="URx">
-            Utiliza álgebra para simplificar la expresión
-            <m>\frac{16-x^4}{x^2-4}</m> y así trabajar para evaluar
-            <m>\lim_{x \to 2} f(x)</m> exactamente, si existe,
-            o para explicar cómo tu trabajo muestra que el límite no existe.
-            Discute cómo tus hallazgos se comparan con tus resultados en (b).
-          </li>
-
-          <li permid="AYG">
-            Verdadero o falso: <m>f(2) = -8</m>.
-            ¿Por qué?
-          </li>
-
-          <li permid="hfP">
-            Verdadero o falso: <m>\frac{16-x^4}{x^2-4} = -4-x^2</m>.
-            ¿Por qué?
-            ¿Cómo se relaciona esta igualdad con tu trabajo anterior con la función <m>f</m>?
-          </li>
-
-          <li permid="NmY">
-            Basándote en todo tu trabajo anterior, construye un gráfico preciso y etiquetado de <m>y = f(x)</m> en el intervalo <m>[1,3]</m>,
-            y escribe una oración que explique lo que ahora sabes sobre <m>\lim_{x \to 2} \frac{16-x^4}{x^2-4}</m>.
-          </li>
-        </ol>
-      </p>
-    </statement>
-    <answer permid="sKn">
-      <p permid="Bnb">
-        <ol marker="a." permid="ili">
-          <li permid="tuh">
-            <p permid="vTo">
-              Todos los números reales excepto <m>x = \pm 2</m>.
-            </p>
-          </li>
-
-          <li permid="ZBq">
-
-            <sidebyside permid="tPG">
-
-              <tabular top="minor" bottom="minor" permid="ERB">
-                <row>
-                  <cell><m>x</m></cell>
-                  <cell><m>f(x)</m></cell>
-                </row>
-                <row>
-                  <cell><m>2.1</m></cell>
-                  <cell><m>-8.41</m></cell>
-                </row>
-                <row>
-                  <cell><m>2.01</m></cell>
-                  <cell><m>-8.0401</m></cell>
-                </row>
-                <row>
-                  <cell><m>2.001</m></cell>
-                  <cell><m>-8.004001</m></cell>
-                </row>
-                <row>
-                  <cell><m>1.999</m></cell>
-                  <cell><m>-7.996001</m></cell>
-                </row>
-                <row>
-                  <cell><m>1.99</m></cell>
-                  <cell><m>-7.9601</m></cell>
-                </row>
-                <row>
-                  <cell><m>1.9</m></cell>
-                  <cell><m>-7.61</m></cell>
-                </row>
-              </tabular>
-
-            </sidebyside>
-
-            <p permid="cax">
-              <m>\lim_{x \to 2} f(x) = -8</m>.
-            </p>
-          </li>
-
-          <li permid="FIz">
-            <p permid="IhG">
-              <m>
-                \lim_{x \to 2} \frac{16-x^4}{x^2-4} = -8</m>.
-            </p>
-          </li>
-
-          <li permid="lPI">
-            <p permid="ooP">
-              Falso.
-            </p>
-          </li>
-
-          <li permid="RWR">
-            <p permid="UvY">
-              Falso.
-            </p>
-          </li>
-
-          <li permid="yea">
-
-            <sidebyside width="50%" permid="ZWP">
-
-              <image source="images/1_2_Ez1f_soln" permid="kYK">
-              </image>
-
-            </sidebyside>
-
-          </li>
-        </ol>
-      </p>
-    </answer>
-    <solution permid="MDe">
-      <p permid="cKr">
-        <ol marker="a." permid="JIy">
-          <li permid="elj">
-            <p permid="ADh">
-              <m>f</m> está definida para todos los valores de <m>x</m> excepto aquellos que hacen que <m>x^2 - 4 = 0</m>.
-              Por lo tanto, el dominio de <m>f</m> es el conjunto de todos los números reales excepto <m>x = \pm 2</m>.
-            </p>
-          </li>
-
-          <li permid="Kss">
-            <p permid="gKq">
-              Utilizando una hoja de cálculo, generamos la siguiente tabla.
-            </p>
-
-            <sidebyside permid="GdY">
-
-              <tabular top="minor" bottom="minor" permid="RfT">
-                <row>
-                  <cell><m>x</m></cell>
-                  <cell><m>f(x)</m></cell>
-                </row>
-                <row>
-                  <cell><m>2.1</m></cell>
-                  <cell><m>-8.41</m></cell>
-                </row>
-                <row>
-                  <cell><m>2.01</m></cell>
-                  <cell><m>-8.0401</m></cell>
-                </row>
-                <row>
-                  <cell><m>2.001</m></cell>
-                  <cell><m>-8.004001</m></cell>
-                </row>
-                <row>
-                  <cell><m>1.999</m></cell>
-                  <cell><m>-7.996001</m></cell>
-                </row>
-                <row>
-                  <cell><m>1.99</m></cell>
-                  <cell><m>-7.9601</m></cell>
-                </row>
-                <row>
-                  <cell><m>1.9</m></cell>
-                  <cell><m>-7.61</m></cell>
-                </row>
-              </tabular>
-
-            </sidebyside>
-
-            <p permid="MRz">
-              La tendencia numérica sugiere que <m>\lim_{x \to 2} f(x) = -8</m>.
-            </p>
-          </li>
-
-          <li permid="qzB">
-            <p permid="sYI">
-              Al factorizar el numerador y el denominador de <m>f(x)</m>,
-              observamos que
-              <me permid="Dco">
-                \frac{16-x^4}{x^2-4} = \frac{(4-x^2)(4+x^2)}{(x-2)(x+2)} = \frac{(2-x)(2+x)(4+x^2)}{(x-2)(x+2)}
-              </me>.
-              Tomando el límite cuando <m>x \to 2</m>,
-              tomamos valores cada vez más cercanos,
-              pero no iguales a 2, y por lo tanto
-              <me permid="jjx">
-                \lim_{x \to 2} \frac{16-x^4}{x^2-4} = \lim_{x \to 2} \frac{(2-x)(2+x)(4+x^2)}{(x-2)(x+2)} = \lim_{x \to 2} -1(4+x^2)
-              </me>,
-              ya que <m>\frac{2-x}{x-2} = -1</m> para todo <m>x \ne 2</m>.
-              Finalmente, evaluando el último límite cuando <m>x \to 2</m>, vemos que
-              <me permid="PqG">
-                \lim_{x \to 2} \frac{16-x^4}{x^2-4} = -1(4+2^2) = -8
-              </me>.
-            </p>
-          </li>
-
-          <li permid="WGK">
-            <p permid="ZfR">
-              Falso.
-              En la parte (a), vimos que <m>f(2)</m> no está definida.
-              Ahora sabemos que <m>f</m> tiene un límite de <m>-8</m> a medida que <m>x</m> se acerca a <m>2</m>,
-              pero sigue siendo el caso que <m>f(2)</m> no está definida.
-            </p>
-          </li>
-
-          <li permid="iVc">
-            <p permid="Fna">
-              Falso.
-              La igualdad mencionada solo se cumple para valores de <m>x</m> distintos de <m>2</m> o <m>-2</m>.
-              Podemos usar esta igualdad al evaluar el límite,
-              ya que al hacerlo nunca dejamos que <m>x</m> sea igual a <m>2</m>,
-              sino que solo se acerque a <m>2</m>.
-            </p>
-          </li>
-
-          <li permid="Pcl">
-            <p permid="luj">
-              Dado que <m>f(2)</m> no está definida pero <m>f</m> tiene un límite de <m>-8</m> a medida que <m>x \to 2</m>,
-              vemos que el gráfico tiene un "agujero" en el punto <m>(2,-8)</m>,
-              como se ve en la siguiente figura.
-            </p>
-
-            <sidebyside width="50%" permid="mlh">
-
-              <image source="images/1_2_Ez1f_soln" permid="xnc">
-              </image>
-
-            </sidebyside>
-
-          </li>
-        </ol>
-      </p>
-    </solution>
-  </exercise>
-
-  <exercise xml:id="ez-1-2-abs-val" permid="UhD">
-    <statement>
-      <p permid="med">
-        Sea <m>g(x) = -\frac{|x+3|}{x+3}</m>.
-      </p>
-
-<p permid="Slm">
-  <ol marker="a." permid="mVb">
-    <li permid="vju">¿Cuál es el dominio de <m>g</m>?</li>
-
-    <li permid="bqD">
-      Utiliza una secuencia de valores cercanos a <m>a = -3</m> para estimar el valor de <m>\lim_{x \to -3} g(x)</m>,
-      si crees que el límite existe.
-      Si crees que el límite no existe, explica por qué.
-    </li>
-
-    <li permid="HxM">
-      Utiliza álgebra para simplificar la expresión
-      <m>\frac{|x+3|}{x+3}</m> y así trabajar para evaluar
-      <m>\lim_{x \to -3} g(x)</m> exactamente, si existe,
-      o para explicar cómo tu trabajo muestra que el límite no existe.
-      Discute cómo tus hallazgos se comparan con tus resultados en (b). (Pista:
-      <m>|a| = a</m> cuando <m>a \ge 0</m>,
-      pero <m>|a| = -a</m> cuando <m>a \lt 0</m>.)
-    </li>
-
-    <li permid="nEV">
-      Verdadero o falso: <m>g(-3) = -1</m>.
-      ¿Por qué?
-    </li>
-
-    <li permid="TMe">
-      Verdadero o falso: <m>-\frac{|x+3|}{x+3} = -1</m>.
-      ¿Por qué?
-      ¿Cómo se relaciona esta igualdad con tu trabajo anterior con la función <m>g</m>?
-    </li>
-
-    <li permid="zTn">
-      Basándote en todo tu trabajo anterior, construye un gráfico preciso y etiquetado de <m>y = g(x)</m> en el intervalo <m>[-4,-2]</m>,
-      y escribe una oración que explique lo que ahora sabes sobre <m>\lim_{x \to -3} g(x)</m>.
-    </li>
-  </ol>
-</p>
-
-<answer permid="EYF">
-  <p permid="huk">
-    <ol marker="a." permid="Osr">
-      <li permid="gaw">
-        <p permid="RBs">
-          Todos los números reales excepto <m>x = -3</m>.
-        </p>
-      </li>
-
-      <li permid="MhF">
-
-        <sidebyside permid="Ssq">
-
-          <tabular top="minor" bottom="minor" permid="dul">
-            <row>
-              <cell><m>x</m></cell>
-              <cell><m>g(x)</m></cell>
-            </row>
-            <row>
-              <cell><m>-2.9</m></cell>
-              <cell><m>-1</m></cell>
-            </row>
-            <row>
-              <cell><m>-2.99</m></cell>
-              <cell><m>-1</m></cell>
-            </row>
-            <row>
-              <cell><m>-2.999</m></cell>
-              <cell><m>-1</m></cell>
-            </row>
-            <row>
-              <cell><m>-3.001</m></cell>
-              <cell><m>1</m></cell>
-            </row>
-            <row>
-              <cell><m>-3.01</m></cell>
-              <cell><m>-1</m></cell>
-            </row>
-            <row>
-              <cell><m>-3.1</m></cell>
-              <cell><m>-1</m></cell>
-            </row>
-          </tabular>
-
-        </sidebyside>
-
-        <p permid="xIB">
-          El límite no existe.
-        </p>
-      </li>
-
-      <li permid="soO">
-        <p permid="dPK">
-          Si <m>x \gt -3</m>,
-          <me permid="vxP">
-            -\frac{|x+3|}{x+3} = -\frac{x+3}{x+3} = -1;
-          </me>
-          si <m>x \lt -3</m>, se sigue que
-          <me permid="bEY">
-            -\frac{|x+3|}{x+3} = -\frac{-(x+3)}{x+3} = +1
-          </me>.
-          Por lo tanto, el límite no existe.
-        </p>
-      </li>
-
-      <li permid="YvX">
-        <p permid="JWT">
-          Falso.
-        </p>
-      </li>
-
-      <li permid="EDg">
-        <p permid="qec">
-          Falso.
-        </p>
-      </li>
-
-      <li permid="kKp">
-
-        <sidebyside width="50%" permid="yzz">
-
-          <image source="images/1_2_Ez2f_soln" permid="JBu">
-          </image>
-
-        </sidebyside>
-
-      </li>
-    </ol>
-  </p>
-</answer>
-
-<solution permid="YRw">
-  <p permid="IRA">
-    <ol marker="a." permid="pPH">
-      <li permid="QRy">
-        <p permid="Wll">
-          El dominio de <m>g</m> es todos los números reales excepto <m>x = -3</m>.
-        </p>
-      </li>
-
-      <li permid="wYH">
-        <p permid="Csu">
-          Utilizando una hoja de cálculo, generamos la siguiente tabla.
-        </p>
-
-        <sidebyside permid="eGI">
-
-          <tabular top="minor" bottom="minor" permid="pID">
-            <row>
-              <cell><m>x</m></cell>
-              <cell><m>g(x)</m></cell>
-            </row>
-            <row>
-              <cell><m>-2.9</m></cell>
-              <cell><m>-1</m></cell>
-            </row>
-            <row>
-              <cell><m>-2.99</m></cell>
-              <cell><m>-1</m></cell>
-            </row>
-            <row>
-              <cell><m>-2.999</m></cell>
-              <cell><m>-1</m></cell>
-            </row>
-            <row>
-              <cell><m>-3.001</m></cell>
-              <cell><m>1</m></cell>
-            </row>
-            <row>
-              <cell><m>-3.01</m></cell>
-              <cell><m>-1</m></cell>
-            </row>
-            <row>
-              <cell><m>-3.1</m></cell>
-              <cell><m>-1</m></cell>
-            </row>
-          </tabular>
-
-        </sidebyside>
-
-<p permid="izD">
-  A medida que nos acercamos a <m>-3</m> desde la derecha,
-  los valores de la función se acercan
-  (se mantienen constantes en)
-  <m>1</m>;
-  pero a medida que nos acercamos a <m>-3</m> desde la izquierda,
-  los valores de la función se acercan
-  (se mantienen constantes en)
-  <m>-1</m>.
-  Por lo tanto, los valores de la función no se acercan arbitrariamente a un único valor,
-  y por lo tanto el límite no existe.
-</p>
-</li>
-
-<li permid="dfQ">
-<p permid="OGM">
-Observamos que <m>|x+3| = (x+3)</m> siempre que <m>x \ge -3</m>,
-y que <m>|x+3| = -(x+3)</m> siempre que <m>x \lt -3</m>.
-Entonces, si <m>x \gt -3</m>, vemos que
-<me permid="HMh">
--\frac{|x+3|}{x+3} = -\frac{x+3}{x+3} = -1
-</me>
-mientras que si <m>x \lt -3</m>, se sigue que
-<me permid="nTq">
--\frac{|x+3|}{x+3} = -\frac{-(x+3)}{x+3} = +1
-</me>.
-Debido a que el valor de la función es <m>-1</m> a la derecha de <m>-3</m> y <m>+1</m> a la izquierda de <m>-3</m>,
-se sigue que el límite no existe.
-</p>
-</li>
-
-<li permid="JmZ">
-<p permid="uNV">
-Falso, ya que <m>-3</m> no pertenece al dominio de <m>g</m>,
-<m>g(-3)</m> está indefinido.
-</p>
-</li>
-
-<li permid="pui">
-<p permid="aVe">
-Falso.
-Esta igualdad solo es cierta cuando <m>x \gt -3</m>,
-como se ve en nuestro trabajo en (c).
-</p>
-</li>
-
-<li permid="VBr">
-<p permid="Hcn">
-Dado que <m>g</m> se acerca a diferentes valores de salida a medida que <m>x</m> se acerca a <m>-3</m> desde diferentes direcciones,
-<m>g</m> no tiene un límite cuando <m>x \to -3</m>,
-como se ve en la siguiente figura.
-</p>
-
-<sidebyside width="50%" permid="KNR">
-
-<image source="images/1_2_Ez2f_soln" permid="VPM">
-</image>
-
-</sidebyside>
-
-</li>
-</ol>
-</p>
-</solution>
-</exercise>
-
-<exercise xml:id="ez-1-2-Two-Graphs" permid="AoM">
-<statement>
-<p permid="ysv">
-Para cada uno de los siguientes enunciados,
-dibuja un gráfico en los ejes proporcionados de una función que tenga las propiedades indicadas.
-</p>
-
-<figure xml:id="F-1-2-Ez3" permid="KGN">
-<caption>Ejes para trazar <m>y = f(x)</m> en (a) y <m>y = g(x)</m> en (b).</caption>
-<image permid="azF" width="100%" source="images/1_2_Ez3" />
-</figure>
-
-<p permid="ezE">
-<ol marker="a." permid="fqC">
-<li permid="BIA">
-<p permid="QvZ">
-<m>y = f(x)</m> tal que
-
-<ul permid="Tck">
-<li permid="rEU">
-<m>f(-2) = 2</m> y <m>\lim_{x \to -2} f(x) = 1</m>
-</li>
-
-<li permid="XMd">
-<m>f(-1) = 3</m> y <m>\lim_{x \to -1} f(x) = 3</m>
-</li>
-
-<li permid="DTm">
-<m>f(1)</m> no está definido y <m>\lim_{x \to 1} f(x) = 0</m>
-</li>
-
-<li permid="kav">
-<m>f(2) = 1</m> y <m>\lim_{x \to 2} f(x)</m> no existe.
-</li>
-</ul>
-</p>
-</li>
-
-<li permid="hPJ">
-<p permid="wDi">
-<m>y = g(x)</m> tal que
-
-<ul permid="zjt">
-<li permid="QhE">
-<m>g(-2) = 3</m>,
-<m>g(-1) = -1</m>,
-<m>g(1) = -2</m> y <m>g(2) = 3</m>
-</li>
-
-<li permid="woN">
-En <m>x = -2, -1, 1</m> y <m>2</m>, <m>g</m> tiene un límite,
-y su límite es igual al valor de la función en ese punto.
-</li>
-
-<li permid="cvW">
-<m>g(0)</m> no está definido y <m>\lim_{x \to 0} g(x)</m> no existe.
-</li>
-</ul>
-</p>
-</li>
-</ol>
-</p>
-</statement>
-<answer permid="RmX">
-<p permid="NBt">
-<ol marker="a." permid="uzA">
-<li permid="NWS">
-```xml
-<p permid="NBt">
-<ol marker="a." permid="uzA">
-<li permid="NWS">
-
-<sidebyside width="50%" permid="qVa">
-
-<image source="images/1_2_Ez3a_soln" permid="Uaz">
-</image>
-
-</sidebyside>
-
-</li>
-
-<li permid="ueb">
-
-<sidebyside width="50%" permid="Xcj">
-
-<image source="images/1_2_Ez3b_soln" permid="AhI">
-</image>
-
-</sidebyside>
-
-</li>
-</ol>
-</p>
-</answer>
-<solution permid="lfO">
-<p permid="oYJ">
-<ol marker="a." permid="VWQ">
-<li permid="alk">
-<p permid="njw">
-Un posible gráfico se muestra a continuación.
-</p>
-
-<sidebyside width="50%" permid="Djs">
-
-<image source="images/1_2_Ez3a_soln" permid="BWV">
-</image>
-
-</sidebyside>
-
-</li>
-
-<li permid="Gst">
-<p permid="TqF">
-Un posible gráfico se muestra a continuación.
-</p>
-
-<sidebyside width="50%" permid="jqB">
-
-<image source="images/1_2_Ez3b_soln" permid="iee">
-</image>
-
-</sidebyside>
-
-</li>
-</ol>
-</p>
-</solution>
-</exercise>
-
-<exercise xml:id="ez-1-2-Bungee" permid="gvV">
-<statement>
-<p permid="qNW">
-Un saltador de bungee se lanza desde una torre en el momento <m>t=0</m>.
-Su altura <m>s</m> en pies en el tiempo <m>t</m> en segundos está dada por <m>s(t) = 100\cos(0.75t) \cdot e^{-0.2t}+100</m>.
-</p>
-
-<p permid="WVf">
-<ol marker="a." permid="LxL">
-<li permid="mzC">
-Escribe una expresión para la velocidad promedio del saltador de bungee en el intervalo <m>[1,1+h]</m>.
-</li>
-
-<li permid="SGL">
-Usa tecnología informática para estimar el valor del límite cuando <m>h \to 0</m> de la cantidad que encontraste en (a).
-</li>
-
-<li permid="yNU">
-¿Cuál es el significado del valor del límite en (b)?
-¿Cuáles son sus unidades?
-</li>
-</ol>
-</p>
-</statement>
-<answer permid="dBp">
-<p permid="tIC">
-<ol marker="a." permid="aGJ">
-<li permid="eVd">
-<p permid="zxO">
-<me permid="goR">
-AV_{[1,1+h]} = \frac{100\cos(0.75(1+h)) \cdot e^{-0.2(1+h)} - 100\cos(0.75) \cdot e^{-0.2}}{h}
-</me>
-</p>
-</li>
-
-<li permid="Lcm">
-<p permid="fEX">
-<me permid="Mwa">
-\lim_{h \to 0} AV_{1, 1+h} \approx -53.837
-</me>.
-</p>
-</li>
-
-<li permid="rjv">
-<p permid="LMg">
-La velocidad instantánea del saltador de bungee en el momento <m>t = 1</m> es aproximadamente <m>-53.837</m> 	pies/seg.
-</p>
-</li>
-</ol>
-</p>
-</answer>
-<solution permid="xug">
-<p permid="VfS">
-<ol marker="a." permid="CdZ">
-<li permid="XqE">
-<p permid="rTp">
-Usando la fórmula estándar para la velocidad promedio, vemos que
-<md permid="sDj">
-<mrow>AV_{[1,1+h]} &amp;= \frac{s(1+h)-s(1)}{h}</mrow>
-<mrow>&amp;= \frac{(100\cos(0.75(1+h)) \cdot e^{-0.2(1+h)}+100) - (100\cos(0.75) \cdot e^{-0.2}+100)}{h}</mrow>
-<mrow>&amp;= \frac{100\cos(0.75(1+h)) \cdot e^{-0.2(1+h)}+100 - 100\cos(0.75) \cdot e^{-0.2}-100)}{h}</mrow>
-<mrow>&amp;= \frac{100\cos(0.75(1+h)) \cdot e^{-0.2(1+h)} - 100\cos(0.75) \cdot e^{-0.2}}{h}</mrow>
-</md>
-</p>
-</li>
-
-<li permid="DxN">
-<p permid="Yay">
-Usando una hoja de cálculo y pequeños valores de <m>h</m> en la expresión <m>AV_{[1,1+h]}</m>,
-vemos que
-</p>
-
-<table xml:id="T-1-2-Ez-4-s" permid="Oln">
-<title>Valores de <m>AV_{[1,1+h]}</m> cerca de <m>h=0</m>.</title>
-<tabular top="minor" bottom="minor" permid="usw">
-<row>
-<cell><m>h</m></cell>
-<cell><m>AV_{[1,1+h]}</m></cell>
-</row>
-<row>
-<cell><m>0.1</m></cell>
-<cell><m>-54.50145823</m></cell>
-</row>
-<row>
-<cell><m>0.01</m></cell>
-<cell><m>-53.90917396</m></cell>
-</row>
-<row>
-<cell><m>0.001</m></cell>
-<cell><m>-53.84429251</m></cell>
-</row>
-<row>
-<cell><m>0.0001</m></cell>
-<cell><m>-53.83774757</m></cell>
-</row>
-<row>
-<cell><m>-0.1</m></cell>
-<cell><m>-53.83629174</m></cell>
-</row>
-<row>
-<cell><m>-0.01</m></cell>
-<cell><m>-53.82973418</m></cell>
-</row>
-<row>
-<cell><m>-0.001</m></cell>
-<cell><m>-53.76359015</m></cell>
-</row>
-<row>
-<cell><m>-0.0001</m></cell>
-<cell><m>-53.04508149</m></cell>
-</row>
-</tabular>
-
-</table>
-
-<p permid="EhH">
-y por lo tanto
-<me permid="YKs">
-\lim_{h \to 0} AV_{1, 1+h} \approx -53.837
-</me>.
-</p>
-</li>
-
-<li permid="PMf">
-<p permid="koQ">
-Dado que <m>\lim_{h \to 0} AV_{1, 1+h} \approx -53.837</m> esto nos dice que la velocidad instantánea del saltador de bungee en el momento <m>t = 1</m> es aproximadamente <m>-53.837</m> 	pies/seg.
-</p>
-</li>
-</ol>
-</p>
-</solution>
-</exercise>
+            <sidebyside width="50%" permid="qVa">
+
+              <image source="images/1_2_Ez3a_soln" permid="Uaz">
+              </image>
+
+            </sidebyside>
+
+          </li>
+
+          <li permid="ueb">
+
+            <sidebyside width="50%" permid="Xcj">
+
+              <image source="images/1_2_Ez3b_soln" permid="AhI">
+              </image>
+
+            </sidebyside>
+
+          </li>
+        </ol>
+      </p>
+    </answer>
+    <solution permid="lfO">
+      <p permid="oYJ">
+        <ol marker="a." permid="VWQ">
+          <li permid="alk">
+            <p permid="njw">
+              One possible graph follows.
+            </p>
+
+            <sidebyside width="50%" permid="Djs">
+
+              <image source="images/1_2_Ez3a_soln" permid="BWV">
+              </image>
+
+            </sidebyside>
+
+          </li>
+
+          <li permid="Gst">
+            <p permid="TqF">
+              One possible graph follows.
+            </p>
+
+            <sidebyside width="50%" permid="jqB">
+
+              <image source="images/1_2_Ez3b_soln" permid="iee">
+              </image>
+
+            </sidebyside>
+
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise xml:id="ez-1-2-Bungee" permid="gvV">
+    <statement>
+      <p permid="qNW">
+        A bungee jumper dives from a tower at time <m>t=0</m>.
+        Her height <m>s</m> in feet at time <m>t</m> in seconds is given by <m>s(t) = 100\cos(0.75t) \cdot e^{-0.2t}+100</m>.
+      </p>
+
+      <p permid="WVf">
+        <ol marker="a." permid="LxL">
+          <li permid="mzC">
+            Write an expression for the average velocity of the bungee jumper on the interval <m>[1,1+h]</m>.
+          </li>
+
+          <li permid="SGL">
+            Use computing technology to estimate the value of the limit as <m>h \to 0</m> of the quantity you found in (a).
+          </li>
+
+          <li permid="yNU">
+            What is the meaning of the value of the limit in (b)?
+            What are its units?
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <answer permid="dBp">
+      <p permid="tIC">
+        <ol marker="a." permid="aGJ">
+          <li permid="eVd">
+            <p permid="zxO">
+              <me permid="goR">
+                AV_{[1,1+h]} = \frac{100\cos(0.75(1+h)) \cdot e^{-0.2(1+h)} - 100\cos(0.75) \cdot e^{-0.2}}{h}
+              </me>
+            </p>
+          </li>
+
+          <li permid="Lcm">
+            <p permid="fEX">
+              <me permid="Mwa">
+                \lim_{h \to 0} AV_{1, 1+h} \approx -53.837
+              </me>.
+            </p>
+          </li>
+
+          <li permid="rjv">
+            <p permid="LMg">
+              The instantaneous velocity of the bungee jumper at the moment <m>t = 1</m> is approximately <m>-53.837</m> 	ft/sec.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </answer>
+    <solution permid="xug">
+      <p permid="VfS">
+        <ol marker="a." permid="CdZ">
+          <li permid="XqE">
+            <p permid="rTp">
+              Using the standard formula for average velocity, we see that
+              <md permid="sDj">
+                <mrow>AV_{[1,1+h]} &amp;= \frac{s(1+h)-s(1)}{h}</mrow>
+                <mrow>&amp;= \frac{(100\cos(0.75(1+h)) \cdot e^{-0.2(1+h)}+100) - (100\cos(0.75) \cdot e^{-0.2}+100)}{h}</mrow>
+                <mrow>&amp;= \frac{100\cos(0.75(1+h)) \cdot e^{-0.2(1+h)}+100 - 100\cos(0.75) \cdot e^{-0.2}-100)}{h}</mrow>
+                <mrow>&amp;= \frac{100\cos(0.75(1+h)) \cdot e^{-0.2(1+h)} - 100\cos(0.75) \cdot e^{-0.2}}{h}</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li permid="DxN">
+            <p permid="Yay">
+              Using a spreadsheet and small values of <m>h</m> in the expression <m>AV_{[1,1+h]}</m>,
+              we see that
+            </p>
+
+            <table xml:id="T-1-2-Ez-4-s" permid="Oln">
+              <title>Values of <m>AV_{[1,1+h]}</m> near <m>h=0</m>.</title>
+              <tabular top="minor" bottom="minor" permid="usw">
+                <row>
+                  <cell><m>h</m></cell>
+                  <cell><m>AV_{[1,1+h]}</m></cell>
+                </row>
+                <row>
+                  <cell><m>0.1</m></cell>
+                  <cell><m>-54.50145823</m></cell>
+                </row>
+                <row>
+                  <cell><m>0.01</m></cell>
+                  <cell><m>-53.90917396</m></cell>
+                </row>
+                <row>
+                  <cell><m>0.001</m></cell>
+                  <cell><m>-53.84429251</m></cell>
+                </row>
+                <row>
+                  <cell><m>0.0001</m></cell>
+                  <cell><m>-53.83774757</m></cell>
+                </row>
+                <row>
+                  <cell><m>-0.1</m></cell>
+                  <cell><m>-53.83629174</m></cell>
+                </row>
+                <row>
+                  <cell><m>-0.01</m></cell>
+                  <cell><m>-53.82973418</m></cell>
+                </row>
+                <row>
+                  <cell><m>-0.001</m></cell>
+                  <cell><m>-53.76359015</m></cell>
+                </row>
+                <row>
+                  <cell><m>-0.0001</m></cell>
+                  <cell><m>-53.04508149</m></cell>
+                </row>
+              </tabular>
+
+            </table>
+
+            <p permid="EhH">
+              and hence
+              <me permid="YKs">
+                \lim_{h \to 0} AV_{1, 1+h} \approx -53.837
+              </me>.
+            </p>
+          </li>
+
+          <li permid="PMf">
+            <p permid="koQ">
+              Since <m>\lim_{h \to 0} AV_{1, 1+h} \approx -53.837</m> this tells us that the instantaneous velocity of the bungee jumper at the moment <m>t = 1</m> is approximately <m>-53.837</m> 	ft/sec.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </exercise>
 
 </exercises>
