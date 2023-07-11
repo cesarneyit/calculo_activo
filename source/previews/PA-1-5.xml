@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Derechos de autor 2012-2019                                          -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
-<!-- This file is part of Active Calculus.                                 -->
+<!-- Este archivo es parte de Active Calculus.                             -->
 <!--                                                                       -->
-<!-- Permission is granted to copy, distribute and/or modify this document -->
-<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
-<!-- may be used for free by any party so long as attribution is given to  -->
-<!-- the author(s), the work and its derivatives are used in the spirit of -->
-<!-- "share and share alike".  All trademarks are the registered marks of  -->
-<!-- their respective owners.                                              -->
+<!-- Se otorga permiso para copiar, distribuir y / o modificar este documento -->
+<!-- bajo los términos de la licencia Creative Commons BY-SA.              -->
+<!-- El trabajo se puede utilizar de forma gratuita por cualquier parte, siempre que se otorgue atribución -->
+<!-- al(s) autor(es), y el trabajo y sus derivados se utilicen en el espíritu de -->
+<!-- "compartir y compartir por igual".                                     -->
+<!-- Todas las marcas comerciales son marcas registradas de sus respectivos propietarios. -->
 <!-- **********************************************************************-->
 <exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-1-5" permid="Qvm">
   <p permid="XZL">
-    One of the longest stretches of straight
-    (and flat)
-    road in North America can be found on the Great Plains in the state of North Dakota on state highway 46,
-    which lies just south of the interstate highway I-94 and runs through the town of Gackle.
-    A car leaves town
-    (at time <m>t = 0</m>)
-    and heads east on highway 46;
-    its position in miles from Gackle at time <m>t</m> in minutes is given by the graph of the function in <xref ref="F-1-5-PA1">Figure</xref>.
-    Three important points are labeled on the graph;
-    where the curve looks linear,
-    assume that it is indeed a straight line.
+    Uno de los tramos de carretera más largos y rectos
+    (y planos)
+    de América del Norte se encuentra en las Grandes Llanuras, en el estado de Dakota del Norte, en la carretera estatal 46,
+    que se encuentra justo al sur de la autopista interestatal I-94 y atraviesa la ciudad de Gackle.
+    Un automóvil sale de la ciudad
+    (en el tiempo <m>t = 0</m>)
+    y se dirige hacia el este por la carretera 46;
+    su posición en millas desde Gackle en el tiempo <m>t</m> en minutos se muestra en el gráfico de la función en la <xref ref="F-1-5-PA1">Figura</xref>.
+    En el gráfico se etiquetan tres puntos importantes;
+    cuando la curva parece lineal,
+    asume que es realmente una línea recta.
   </p>
 
   <figure xml:id="F-1-5-PA1" permid="kod">
-    <caption>The graph of <m>y = s(t)</m>, the position of the car along highway 46, which tells its distance in miles from Gackle, ND, at time <m>t</m> in minutes.</caption>
+    <caption>El gráfico de <m>y = s(t)</m>, la posición del automóvil a lo largo de la carretera 46, que indica su distancia en millas desde Gackle, ND, en el tiempo <m>t</m> en minutos.</caption>
     <image width="47%" source="images/1_5_PA1" />
   </figure>
 
@@ -36,36 +36,35 @@
     <ol marker="a." permid="uNi">
       <li permid="aUr">
         <p permid="zxb">
-          In everyday language,
-          describe the behavior of the car over the provided time interval.
-          In particular,
-          discuss what is happening on the time intervals <m>[57,68]</m> and <m>[68,104]</m>.
+          En lenguaje cotidiano,
+          describe el comportamiento del automóvil durante el intervalo de tiempo proporcionado.
+          En particular,
+          habla sobre lo que sucede en los intervalos de tiempo <m>[57,68]</m> y <m>[68,104]</m>.
         </p>
       </li>
 
       <li permid="HbA">
         <p permid="fEk">
-          Find the slope of the line between the points
-          <m>(57,63.8)</m> and <m>(104,106.8)</m>.
-          What are the units on this slope?
-          What does the slope represent?
+          Encuentra la pendiente de la línea entre los puntos
+          <m>(57,63.8)</m> y <m>(104,106.8)</m>.
+          ¿Cuáles son las unidades de esta pendiente?
+          ¿Qué representa la pendiente?
         </p>
       </li>
 
       <li permid="niJ">
         <p permid="LLt">
-          Find the average rate of change of the car's position on the interval <m>[68,104]</m>.
-          Include units on your answer.
+          Encuentra la tasa promedio de cambio de la posición del automóvil en el intervalo <m>[68,104]</m>.
+          Incluye las unidades en tu respuesta.
         </p>
       </li>
 
       <li permid="TpS">
         <p permid="rSC">
-          Estimate the instantaneous rate of change of the car's position at the moment <m>t = 80</m>.
-          Write a sentence to explain your reasoning and the meaning of this value.
+          Estima la tasa de cambio instantánea de la posición del automóvil en el momento <m>t = 80</m>.
+          Escribe una oración para explicar tu razonamiento y el significado de este valor.
         </p>
       </li>
     </ol>
   </p>
 </exploration>
-
