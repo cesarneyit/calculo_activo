@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
 <!-- Copyright 2012-2019                                                   -->
 <!-- Matthew Boelkins                                                      -->
@@ -23,20 +23,20 @@
   </exercise>
 
   <exercise permid="yGD">
-    <title>Exercise Title</title>
+    <title>Título del ejercicio</title>
     <statement>
       <p permid="Dqw">
-        Exercise Statement
+        Enunciado del ejercicio
       </p>
     </statement>
     <answer permid="KUV">
       <p permid="Xjn">
-        Exercise Answer
+        Respuesta del ejercicio
       </p>
     </answer>
     <solution permid="eNM">
       <p permid="rce">
-        Exercise Solution
+        Solución del ejercicio
       </p>
     </solution>
   </exercise>
